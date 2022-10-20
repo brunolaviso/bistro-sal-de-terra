@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Background, Logo, ParagraphWrapper, Paragraph, Schedule, Emphasis, Address } from './Home/styles'
+import { Background, Logo, ParagraphWrapper, Paragraph, Schedule, Emphasis, Address } from '../styles/Home/_styles'
 import background from '../../public/background.png';
 
 const Home: NextPage = () => {
