@@ -6,7 +6,7 @@ interface BackgroundProps {
 }
 
 export const Background = styled.div<BackgroundProps>`
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 
   background-color: #212121;
@@ -17,6 +17,10 @@ export const Background = styled.div<BackgroundProps>`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1080px) {
+    padding: 16px;
+  }
 ` 
 
 export const Logo = styled.img`
@@ -24,7 +28,7 @@ export const Logo = styled.img`
 ` 
 
 export const ParagraphWrapper = styled.div`
-  width: 800px;
+  max-width: 800px;
   margin: 32px 0;
 
   display: flex;
@@ -46,6 +50,7 @@ export const Schedule = styled.strong`
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 32px;
+  text-align: center;
 `
 
 export const Address = styled.p`
